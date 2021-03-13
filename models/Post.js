@@ -13,11 +13,11 @@ Post.init({
         autoIncrement: true
     },
     title: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
         allowNull: false
     },
     content: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
         allowNull: false,
     },
     user_id: {
@@ -32,6 +32,8 @@ Post.init({
     freezeTableName: true,
     underscored: true,
     modelName: 'post'
+
+
 });
 
 module.exports = Post;
