@@ -67,35 +67,55 @@ router.post('/', (req, res) => {
             res.status(500).json(err);
         });
 });
-
 router.post('/login', (req, res) => {
-
+    // expects {email: 'lernantino@gmail.com', password: 'password1234'}
     User.findOne({
         where: {
             email: req.body.email
         }
     }).then(userData => {
         if (!userData) {
-            res.status(400).json({ message: 'We have no record of that email' });
+            res.status(400).json({ message: 'No user with that email address!' });
             return;
         }
 
         const validPassword = userData.passwordCheck(req.body.password);
-
         if (!validPassword) {
-            res.status(400).json({ message: 'Incorrect password' });
+            res.status(400).json({ message: 'Incorrect password!' });
             return;
         }
 
-        req.session.save(() => {
-            req.session.user_id = userData.id;
-            req.session.username = userData.username;
-            req.session.loggedIn = true;
-
-            res.json({ user: userData, message: 'Thank you for Logging in!' });
-        });
+        res.json({ user: userData, message: 'You are now logged in!' });
     });
 });
+//router.post('/login', (req, res) => {
+
+//    User.findOne({
+//        where: {
+//            email: req.body.email
+//        }
+//    }).then(userData => {
+//        if (!userData) {
+//            res.status(400).json({ message: 'We have no record of that email' });
+//            return;
+//        }
+
+//        const validPassword = userData.passwordCheck(req.body.password);
+
+//        if (!validPassword) {
+//            res.status(400).json({ message: 'Incorrect password' });
+//            return;
+//        }
+
+//        req.session.save(() => {
+//            req.session.user_id = userData.id;
+//            req.session.username = userData.username;
+//            req.session.loggedIn = true;
+
+//            res.json({ user: userData, message: 'Thank you for Logging in!' });
+//        });
+//    });
+//});
 
 router.post('/logout', (req, res) => {
     if (req.session.loggedIn) {
