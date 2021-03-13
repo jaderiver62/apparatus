@@ -12,13 +12,14 @@
   <div class="wrapper">
     <header>
       <h1>
-        <a href="/">Apparatus</a>
+        <a href="/">@pparatus</a>
       </h1>
-      <div class="subtitle"">a blog site for creative tech</div>
+      <div class="subtitle">{tech blog site}</div>
       <nav>
         <span>
           {{#if loggedIn}}
-          <a href="/dashboard">dashboard</a>
+          <button id="login" class="btn" onclick="/dashboard">dashboard</a>
+          <button id="login" class="btn" onclick="/index.html">home</button>
           <button id="logout" class="btn">logout</button>
           {{else}}
           <button id="login" class="btn" onclick="/login">login</button>
