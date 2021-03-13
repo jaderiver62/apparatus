@@ -1,0 +1,76 @@
+body {
+    background-color: rgb(238, 236, 223);
+    color: rgb(20, 20, 20);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding-top: 50px
+}
+
+header {
+    background-color: rgb(159, 160, 103);
+    background-image: url('../images/geometry_of_nature.jpg');
+    background-size: cover;
+    background-blend-mode: screen;
+    text-shadow: 1px 1px rgb(165, 170, 165);
+    opacity: .7;
+}
+
+nav {
+    width: 100%;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.4rem;
+    opacity: 1 !important;
+}
+
+span {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px 20px 20px;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    font-size: 5rem;
+    opacity: 1 !important;
+}
+
+.btn {
+    background-color: rgb(44, 88, 88);
+    border: none;
+    color: rgb(236, 229, 229);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    opacity: .9;
+}
+
+.btn:hover {
+    background-color: #173d18;
+}
+
+a:link,
+a:visited {
+    color: rgb(12, 27, 17);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #204e21;
+}
+
+footer {
+    padding-top: 100px;
+}
