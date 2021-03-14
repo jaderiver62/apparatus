@@ -1,6 +1,6 @@
 body {
-    background-color: rgb(238, 236, 223);
-    color: rgb(20, 20, 20);
+    background-color: rgb(53, 52, 48);
+    color: rgb(189, 172, 172);
     text-align: center;
     margin: 0;
     padding: 0;
@@ -24,12 +24,13 @@ nav {
 
 .subtitle {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2rem;
     padding-bottom: 60px;
     padding-top: 0;
     color: rgb(0, 0, 0) !important;
     opacity: 1 !important;
     font-weight: bolder;
+    text-shadow: -1px 0 rgb(161, 157, 157), 0 1px rgb(161, 157, 157), 1px 0 rgb(161, 157, 157), 0 -1px rgb(161, 157, 157);
 }
 
 span {
