@@ -25,8 +25,8 @@ router.get('/', (req, res) => {
             ]
         })
         .then(postData => {
-            // pass a single post object into the homepage template
-            res.render('homepage', postData[0].get({ plain: true }));
+            const posts = postData.map(post => post.get({ plain: true }));
+            res.render('homepage', { posts });
         })
         .catch(err => {
             console.log(err);
