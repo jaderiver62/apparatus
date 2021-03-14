@@ -1,0 +1,15 @@
+.column {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin: 50px;
+    padding: 20px;
+    line-height: 2.5;
+    font-size: 1.2rem;
+}
+
+.top {
+    opacity: 0;
+}

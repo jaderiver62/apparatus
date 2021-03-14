@@ -1,0 +1,17 @@
+<header>
+	<h1>
+		<a href="/">@pparatus</a>
+	</h1>
+	<div class="subtitle">{tech blog site}</div>
+	<nav>
+		<span>
+			{{#if loggedIn}}
+			<a href="/dashboard"><button id="dashboard" class="btn" onclick="/dashboard">dashboard</button></a>
+			<a href="/"><button id="home" class="btn" onclick="/index.html">home</button></a>
+			<a href="/logout"><button id="logout" class="btn">logout</button></a>
+			{{else}}
+			<a href="/login"><button id="login" class="btn top">login</button></a>
+			{{/if}}
+		</span>
+	</nav>
+</header>

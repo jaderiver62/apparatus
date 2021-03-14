@@ -6,28 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apparatus</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
-  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
 </head>
 
 <body>
   <div class="wrapper">
-    <header>
-      <h1>
-        <a href="/">@pparatus</a>
-      </h1>
-      <div class="subtitle">{tech blog site}</div>
-      <nav>
-        <span>
-          {{#if loggedIn}}
-          <button id="login" class="btn" onclick="/dashboard">dashboard</a>
-          <button id="login" class="btn" onclick="/index.html">home</button>
-          <button id="logout" class="btn">logout</button>
-          {{else}}
-          <button id="login" class="btn" onclick="/login">login</button>
-          {{/if}}
-        </span>
-      </nav>
-    </header>
     <main>
       {{{ body }}}
     </main>
@@ -40,5 +24,4 @@
   <script src="/javascript/logout.js"></script>
   {{/if}}
 </body>
-
 </html>
