@@ -102,3 +102,10 @@ a:hover {
 .post {
     padding: 20px;
 }
+
+.card {
+    margin: 50px;
+    padding: 20px;
+    line-height: 2.5;
+    font-size: 1.2rem;
+}
