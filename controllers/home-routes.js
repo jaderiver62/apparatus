@@ -1,15 +1,37 @@
 const router = require('express').Router();
+
+const { Post, User, Comment } = require('../models');
+
 router.get('/', (req, res) => {
-    res.render('homepage', {
-        id: 1,
-        title: 'Handlebars Docs',
-        content: 'https://handlebarsjs.com/guide/',
-        created_at: new Date(),
-        vote_count: 10,
-        comments: [{}, {}],
-        user: {
-            username: 'test_user'
-        }
-    });
+    Post.findAll({
+            attributes: [
+                'id',
+                'title',
+                'content',
+                'created_at'
+            ],
+            include: [{
+                    model: Comment,
+                    attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+                    include: {
+                        model: User,
+                        attributes: ['username']
+                    }
+                },
+                {
+                    model: User,
+                    attributes: ['username']
+                }
+            ]
+        })
+        .then(postData => {
+            // pass a single post object into the homepage template
+            res.render('homepage', postData[0].get({ plain: true }));
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
 });
+
 module.exports = router;
