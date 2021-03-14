@@ -1,9 +1,6 @@
 body {
     background-color: rgb(53, 52, 48);
     color: rgb(189, 172, 172);
-    text-align: center;
-    margin: 0;
-    padding: 0;
 }
 
 main {
@@ -67,16 +64,30 @@ h1 {
     background-color: #173d18;
 }
 
-a:link,
-a:visited {
+h1 a:link,
+h1 a:visited {
     color: rgb(13, 18, 44);
     text-decoration: none;
 }
 
-a:hover {
+h1 a:hover {
     color: #393753;
 }
 
 footer {
     padding-top: 100px;
+    text-align: center;
 }
+
+a:link {
+    color: #52e9d5;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(139, 158, 187);
+    color: #0c5257;
+    text-decoration: none;
+}
+
+a:hover {}
