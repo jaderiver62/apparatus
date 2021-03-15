@@ -125,10 +125,13 @@ li {
     padding: 40px;
 }
 
-.text,
-.title {
+.text {
     padding: 10px 20px;
     background-color: rgb(31, 25, 34);
+}
+
+.title {
+    padding: 10px 20px;
 }
 
 textarea,
