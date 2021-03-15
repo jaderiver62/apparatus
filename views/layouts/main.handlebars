@@ -6,13 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apparatus</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="/stylesheets/login.css">
 </head>
 
 <body>
   <div class="wrapper">
+    <header>
+      <h1>
+        <a href="/">@pparatus</a>
+      </h1>
+      <div class="subtitle">{tech blog site}</div>
+      <nav>
+        <span>
+          {{!--{{#if loggedIn}}--}}
+          <a href="/dashboard"><button id="dashboard" class="btn">dashboard</button></a>
+          <button id="logout" class="btn">logout</button>
+          {{!--{{else}}--}}
+          <a href="/login"><button id="login" class="btn">login</button></a>
+          {{!--{{/if}}--}}
+        </span>
+      </nav>
+    </header>
+
     <main>
+
       {{{ body }}}
     </main>
     <footer>
@@ -20,8 +38,8 @@
     </footer>
   </div>
 
-  {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
-  {{/if}}
+
 </body>
+
 </html>
