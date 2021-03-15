@@ -102,11 +102,14 @@ a:hover {
     width: 100%;
 }
 
-.post {
+.post,
+.comment,
+a:hover.comment {
     padding: 20px;
     line-height: 2;
     margin: 20px;
     background-color: #141418;
+    color: rgb(129, 100, 100);
 }
 
 .posts-style {
@@ -118,7 +121,22 @@ li {
     list-style-type: none;
 }
 
+.comment-form {
+    padding: 40px;
+}
+
+.text,
 .title {
-    border-bottom: 1px solid rgb(46, 45, 45);
-    padding: 10px;
+    padding: 10px 20px;
+    background-color: rgb(31, 25, 34);
+}
+
+textarea,
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
 }

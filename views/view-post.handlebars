@@ -8,14 +8,43 @@
 	</div>
 	<div class="meta">
 		<i class="fas fa-feather-alt"></i>
-		by {{post.user.username}}
+		&emsp;by {{post.user.username}}
 		</br>
 
 		<i class="fas fa-clock"></i>
-		{{post.created_at}}
+		&emsp;{{post.created_at}}
 		</br>
 
 		<i class="fas fa-comment-dots"></i>
-		<a href="/post/{{post.id}}">{{post.comments.length}} comment(s)</a>
+		&emsp;<a href="#comments">{{post.comments.length}} comment(s)</a>
 	</div>
 </article>
+<form class="comment-form">
+	<div>
+		<textarea name="comment-body"></textarea>
+	</div>
+	<div>
+		<button type="submit" class="btn">add comment</button>
+	</div>
+</form>
+<a name="comments">
+	<div class="comments">
+		{{#each post.comments as |comment|}}
+		<section class="comment">
+			<div class="text">
+				</br>
+				<i class="fas fa-comment-dots"></i>
+
+				&emsp;{{comment_text}}
+			</div>
+			<div class="meta">
+				</br>
+				<i class="fas fa-feather-alt"></i> &emsp;by {{user.username}}
+				</br>
+				<i class="fas fa-clock"></i>&emsp; {{created_at}}
+				</br>
+			</div>
+		</section>
+		{{/each}}
+	</div>
+</a>
