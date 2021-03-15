@@ -1,0 +1,19 @@
+<div class="comments">
+	{{#each post.comments}}
+	<section class="comment">
+		<div class="text">
+			</br>
+			<i class="fas fa-comment-dots"></i>
+
+			&emsp;{{comment_text}}
+		</div>
+		<div class="meta">
+			</br>
+			<i class="fas fa-feather-alt"></i> &emsp;by {{user.username}}
+			</br>
+			<i class="fas fa-clock"></i>&emsp; {{created_at}}
+			</br>
+		</div>
+	</section>
+	{{/each}}
+</div>

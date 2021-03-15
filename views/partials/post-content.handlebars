@@ -1,0 +1,17 @@
+<article class="post">
+	<div class="title">
+		<a href="/post/{{id}}">{{title}}</a>
+	</div>
+	<div class="meta">
+		<i class="fas fa-feather-alt"></i>
+		&emsp;by {{user.username}}
+		</br>
+
+		<i class="fas fa-clock"></i>
+		&emsp;{{created_at}}
+		</br>
+
+		<i class="fas fa-comment-dots"></i>
+		&emsp;<a href="/post/{{id}}">{{comments.length}} comment(s)</a>
+	</div>
+</article>
