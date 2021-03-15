@@ -1,4 +1,4 @@
-{{> main-header}}
+
 <div class="posts-style">
 	<ul class="post-list">
 		{{#each posts as |post|}}
@@ -8,10 +8,10 @@
 					<a href="***post***">{{post.title}}</a>
 				</div>
 				<div class="meta">
-				<i class="fas fa-feather-alt"></i>
-					by {{post.user.username}} 
+					<i class="fas fa-feather-alt"></i>
+					by {{post.user.username}}
 					</br>
-					
+
 					<i class="fas fa-clock"></i>
 					{{post.created_at}}
 					</br>
