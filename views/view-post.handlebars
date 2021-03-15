@@ -19,6 +19,7 @@
 		&emsp;<a href="#comments">{{post.comments.length}} comment(s)</a>
 	</div>
 </article>
+{{#if loggedIn}}
 <form class="comment-form">
 	<div>
 		<textarea name="comment-body"></textarea>
@@ -27,9 +28,10 @@
 		<button type="submit" class="btn">add comment</button>
 	</div>
 </form>
-<a name="comments">
+<script src="/javascript/comment.js"></script>
+{{/if}}
 	<div class="comments">
-		{{#each post.comments as |comment|}}
+		{{#each post.comments}}
 		<section class="comment">
 			<div class="text">
 				</br>
@@ -47,4 +49,3 @@
 		</section>
 		{{/each}}
 	</div>
-</a>
