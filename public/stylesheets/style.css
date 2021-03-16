@@ -114,7 +114,8 @@ a:hover {
 }
 
 .home-post-title {
-    font-size: 1.5rem;
+    font-size: 3rem;
+    padding: 20px;
 }
 
 .post,
@@ -157,6 +158,11 @@ li {
     padding: 10px 20px;
 }
 
+.dash {
+    text-align: center;
+    padding: 40px;
+}
+
 textarea,
 input {
     width: 100%;
@@ -165,14 +171,36 @@ input {
     box-sizing: border-box;
     border: 3px solid var(--green-one);
     background-color: var(--green-one);
-    ;
 }
 
-.post-title {
-    font-size: 1.3rem;
-    font-weight: bold;
+textarea {
+    height: 150px;
 }
 
-.post-content {
-    font-size: 1.2rem;
+h4 {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.dashboard {
+    padding: 60px;
+}
+
+.post-dash,
+.edit-post {
+    font-size: 1.7rem;
+    padding: 40px;
+}
+
+.post-header {
+    font-size: 3rem;
+    padding: 40px;
+}
+
+.dash-btn {
+    margin: 40px;
+}
+
+.home-post-title {
+    font-size: 2rem;
 }
