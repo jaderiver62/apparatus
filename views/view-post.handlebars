@@ -1,12 +1,14 @@
 <article class="post">
-	<div class="title">
-		<h2>
+	<div class="current-post">
+		<h2 class="post-title">
 			{{post.title}}
+			</h2></br>
 		</h2>
-		<p>{{post.content}}</p>
+		<p class="post-content">{{post.content}}</p>
 
 	</div>
 	<div class="meta">
+	</br>
 		<i class="fas fa-feather-alt"></i>
 		&emsp;by {{post.user.username}}
 		</br>
@@ -16,13 +18,13 @@
 		</br>
 
 		<i class="fas fa-comment-dots"></i>
-		&emsp;<a href="#comments">{{post.comments.length}} comment(s)</a>
+		&emsp;{{post.comments.length}} comment(s)
 	</div>
 </article>
 {{#if loggedIn}}
 <form class="comment-form">
 	<div>
-		<textarea name="comment-body"></textarea>
+		<textarea name="comment-body" placeholder="..your thoughts here"></textarea>
 	</div>
 	<div>
 		<button type="submit" class="btn">add comment</button>
