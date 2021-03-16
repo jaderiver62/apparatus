@@ -1,17 +1,14 @@
-<section class="dashboard">
+<section>
 	<h2 class="post-header"><i class="fas fa-arrow-circle-right"></i>&emsp; New Post</h2>
-	<form class="new-post-form">
+	<form id="new-post-form">
 		<div class="post-dash">
 			<label for="post-title">Title</label>
-			</br>
 			<input type="text" id="post-title" name="post-title" />
-		</div>
-		<div class="post-dash">
+
 			<label for="post-body">Post Content</label>
-			</br>
-			<textarea id="post-body" name="post-body" placeholder="...your post here"></textarea>
+			<input id="post-body" name="post-body" {{!--placeholder="...your post here"--}}></input>
 		</div>
-		<button type="submit" class="btn dash-btn">Submit</button>
+		<button type="submit" class="btn">Submit</button>
 	</form>
 </section>
 {{#if posts.length}}
@@ -27,7 +24,6 @@
 	</ol>
 </section>
 {{/if}}
-{{>add-comment}}
 {{>comment-content}}
 
 
