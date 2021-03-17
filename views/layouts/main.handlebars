@@ -22,12 +22,14 @@
       <nav>
         <span>
           {{#if loggedIn}}
+
           <a href="/"><button id="home" class="btn">home</button></a>
           <a href="/dashboard"><button id="dashboard" class="btn">dashboard</button></a>
           <button id="logout" class="btn">logout</button>
           {{else}}
           <a href="/"><button id="home" class="btn">home</button></a>
           <a href="/login"><button id="login" class="btn">login</button></a>
+
           {{/if}}
         </span>
       </nav>

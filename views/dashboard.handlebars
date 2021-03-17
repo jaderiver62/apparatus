@@ -1,19 +1,9 @@
-<section>
-	<h2 class="post-header"><i class="fas fa-arrow-circle-right"></i>&emsp; New Post</h2>
-	<form id="new-post-form">
-		<div class="post-dash">
-			<label for="post-title">Title</label>
-			<input type="text" id="post-title" name="post-title" />
-
-			<label for="post-body">Post Content</label>
-			<textarea id="post-body" name="post-body" {{!--placeholder="...your post here"--}}></textarea>
-		</div>
-		<button type="submit" class="btn dash-btn">Submit</button>
-	</form>
-</section>
 {{#if posts.length}}
+
 <section>
-	<h2 class="post-header">Blog Posts</h2>
+	<div class="dash-header">
+		<a href="/new-post"><button type="new-post" class="btn dash-btn">+ Create New Post</button></a>
+	</div>
 	<ol>
 		{{#each posts as |post|}}
 		<li>
@@ -23,9 +13,11 @@
 		{{/each}}
 	</ol>
 </section>
+{{else}}
+<section>
+	<div>
+		<h2 class="post-header">Ready to make your first post?</h2></br>
+		<a href="/new-post"><button type="new-post" class="btn dash-btn">+ New Post</button></a>
+	</div>
+</section>
 {{/if}}
-{{>comment-content}}
-
-
-
-<script src="/javascript/new-post.js"></script>

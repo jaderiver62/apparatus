@@ -83,6 +83,15 @@ router.get('/post/:id', (req, res) => {
         });
 });
 
+router.get('/signup', (req, res) => {
+    if (req.session.loggedIn) {
+        res.redirect('/');
+        return;
+    }
+
+    res.render('sign-up');
+});
+
 router.get('/login', (req, res) => {
     if (req.session.loggedIn) {
         res.redirect('/');
@@ -90,5 +99,13 @@ router.get('/login', (req, res) => {
     }
 
     res.render('login');
+});
+router.get('/new-post', (req, res) => {
+    if (!req.session.loggedIn) {
+        res.redirect('/');
+        return;
+    }
+
+    res.render('new-post');
 });
 module.exports = router;

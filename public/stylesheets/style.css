@@ -183,6 +183,11 @@ h4 {
     padding: 60px;
 }
 
+.dash-header {
+    display: flex;
+    justify-content: center;
+}
+
 .post-dash,
 .edit,
 .edit-post,
