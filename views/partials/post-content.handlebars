@@ -8,10 +8,10 @@
 		</br>
 
 		<i class="fas fa-clock"></i>
-		&emsp;{{created_at}}
+		&emsp;{{date_format created_at}}
 		</br>
 
 		<i class="fas fa-comment-dots"></i>
-		&emsp;<a href="/post/{{id}}">{{comments.length}} comment(s)</a>
+		&emsp;<a href="/post/{{id}}">{{comments.length}} {{word_format "comment" comments.length}}</a>
 	</div>
 </article>

@@ -1,6 +1,6 @@
 const router = require('express').Router();
-const sequelize = require('../../config/connection');
 const { Post, User, Comment } = require('../../models');
+const withAuth = require('../../utils/auth');
 
 router.get('/', (req, res) => {
     console.log('======================');
@@ -41,8 +41,8 @@ router.get('/:id', (req, res) => {
             },
             attributes: [
                 'id',
-                'content',
                 'title',
+                'content',
                 'created_at',
 
             ],
@@ -72,12 +72,11 @@ router.get('/:id', (req, res) => {
             res.status(500).json(err);
         });
 });
-
-router.post('/', (req, res) => {
+router.post('/', withAuth, (req, res) => {
     Post.create({
             title: req.body.title,
             content: req.body.content,
-            user_id: req.body.user_id
+            user_id: req.session.user_id
         })
         .then(postData => res.json(postData))
         .catch(err => {

@@ -14,22 +14,14 @@
 		</br>
 
 		<i class="fas fa-clock"></i>
-		&emsp;{{post.created_at}}
+		&emsp;{{date_format post.created_at}}
 		</br>
 
 		<i class="fas fa-comment-dots"></i>
-		&emsp;{{post.comments.length}} comment(s)
+		&emsp;{{post.comments.length}}  {{word_format "comment" comments.length}}
 	</div>
 </article>
 {{#if loggedIn}}
-<form class="comment-form">
-	<div>
-		<textarea name="comment-body" placeholder="..your thoughts here"></textarea>
-	</div>
-	<div>
-		<button type="submit" class="btn">add comment</button>
-	</div>
-</form>
-<script src="/javascript/comment.js"></script>
+{{>add-comment}}
 {{/if}}
 {{>comment-content}}
