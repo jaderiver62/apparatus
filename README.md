@@ -24,7 +24,7 @@ This is a Tech Blog App that allows users to signup for login credentials, read,
 ![Project Image](./public/images/apparatus-screenshot_4.png)
 ![Project Image](./public/images/apparatus_screenshot_5.png)
 ![Project Image](./public/images/apparatus_screenshot_6.png)
-![Project Image](./public/images/apparatus_screenshot_7.png)
+
 
 
 ---------------------------------------
