@@ -8,6 +8,7 @@
     --text-bg: rgb(31, 25, 34);
     --main-bg: rgb(34, 34, 34);
     --secondary-bg: #141418;
+    --header-bg: rgb(131, 89, 64);
 }
 
 body {
@@ -23,11 +24,11 @@ main {
 }
 
 header {
-    background-color: rgb(87, 58, 11);
+    background-color: var(--header-bg);
     background-image: url('../images/geometry_of_nature.jpg');
     background-size: cover;
     background-blend-mode: screen;
-    opacity: .7;
+    opacity: .6;
 }
 
 nav {
