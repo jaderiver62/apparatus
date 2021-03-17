@@ -1,5 +1,6 @@
 const router = require('express').Router();
 
+// routes for the base URL
 
 const { Post, User, Comment } = require('../models');
 

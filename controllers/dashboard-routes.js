@@ -2,6 +2,8 @@ const router = require('express').Router();
 const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
+// handles requests to the dahsboard routes using withAuth
+
 router.get('/', withAuth, (req, res) => {
     Post.findAll({
             where: {
