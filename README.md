@@ -36,7 +36,9 @@ Clone the repo, and in the command line run
 Next use dotenv to secure your credentials by making a .env file in the root of your directory.  Use the following template (Where the '*{your-database-name}/{your-user}/{your-password}*' is located use your own personal value!  This is only the template!)
 
 > DB_NAME="{your-database-name}_db"
-> DB_NAMEDB_USER="{your-user}"{your-}
+>
+> DB_USER="{your-user}"
+>
 > DB_PW="{your-password}"
 
 
