@@ -3,16 +3,17 @@
 		<i class="fas fa-edit"></i>&emsp;Post Editor
 	</h2>
 	<form class="edit-post-form">
-		<label for="post-title">Edit Title</label>
+		<label for="post-title">Title</label>
 		<input name="post-title" type="text" value="{{post.title}}" />
-		<label for="post-content">Edit Post Content</label>
+		<label for="post-content">Post Content</label>
 		<textarea name="post-content" type="text"> {{post.content}}</textarea>
 		<button class="btn" type="submit">Save post</button>
 		<button type="button" class="btn delete-post-btn">Delete post</button>
 		<div>
 		</br>
 			<h4>
-				<a href="/post/{{post.id}}">{{post.comments.length}} {{word_format "comment" post.comments.length}}</a>
+				<i class="fas fa-comment-dots"></i>
+		&emsp;<a href="/post/{{post.id}}">{{post.comments.length}} {{word_format "comment" post.comments.length}}</a>
 			</h4>
 		</div>
 	</form>
