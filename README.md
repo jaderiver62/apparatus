@@ -18,11 +18,13 @@ This is a Tech Blog App that allows users to signup for login credentials, read,
 
 ## Screenshots
 
-![Project Image](./public/images/apparatus-screenshot-1.png)
-![Project Image](./public/images/apparatus-screenshot-2.png)
-![Project Image](./public/images/apparatus-screenshot-3.png)
-![Project Image](./public/images/apparatus-screenshot-4.png)
-![Project Image](./public/images/apparatus-screenshot-5.png)
+![Project Image](./public/images/apparatus_screenshot_1.png)
+![Project Image](./public/images/apparatus_screenshot_2.png)
+![Project Image](./public/images/apparatus_screenshot_3.png)
+![Project Image](./public/images/apparatus-screenshot_4.png)
+![Project Image](./public/images/apparatus_screenshot_5.png)
+![Project Image](./public/images/apparatus_screenshot_6.png)
+![Project Image](./public/images/apparatus_screenshot_7.png)
 
 
 ---------------------------------------
