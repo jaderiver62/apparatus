@@ -1,8 +1,7 @@
+var moment = require('moment');
 module.exports = {
     date_format: date => {
-        return ` ${new Date(date).getHours()}:${new Date(date).getMinutes()}  ~  ${new Date(date).getMonth() + 1}/${new Date(date).getDate()}/${new Date(
-      date
-    ).getFullYear()} `;
+        return ` ${moment(date).format("llll").toString()}`;
 
     },
     word_format: (word, amount) => {
