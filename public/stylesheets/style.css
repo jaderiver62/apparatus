@@ -4,7 +4,7 @@
     --green-three: 0c5257;
     --green-four: #6a9690;
     --green-five: #5db2bdc4;
-    --main-font: rgb(129, 100, 100);
+    --main-font: rgb(161, 152, 152);
     --text-bg: rgb(31, 25, 34);
     --main-bg: rgb(34, 34, 34);
     --secondary-bg: #141418;
@@ -23,7 +23,7 @@ main {
 }
 
 header {
-    background-color: rgb(100, 62, 62);
+    background-color: rgb(87, 58, 11);
     background-image: url('../images/geometry_of_nature.jpg');
     background-size: cover;
     background-blend-mode: screen;
