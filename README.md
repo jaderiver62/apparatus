@@ -12,7 +12,7 @@ This is a Tech Blog App that allows users to signup for login credentials, read,
 
 ## Project Link
 
-[Apparatus](https://quiet-ocean-12254.herokuapp.com/)
+[Apparatus](https://quiet-ocean-12254.herokuapp.com/): https://quiet-ocean-12254.herokuapp.com/
 
 ---------------------------------------
 
