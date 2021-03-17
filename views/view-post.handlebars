@@ -1,13 +1,13 @@
 <article class="post">
 	<div class="current-post">
-		<h2 class="post-title">
+		<h2 class="view-post-title">
 			{{post.title}}
 			</h2></br>
 		</h2>
 		<p class="post-content">{{post.content}}</p>
 
 	</div>
-	<div class="meta">
+	<br class="meta">
 	</br>
 		<i class="fas fa-feather-alt"></i>
 		&emsp;by {{post.user.username}}
@@ -19,6 +19,8 @@
 
 		<i class="fas fa-comment-dots"></i>
 		&emsp;{{post.comments.length}}  {{word_format "comment" comments.length}}
+		</br>
+		<a href="/dashboard/edit/{{post.id}}" class="edit-post"><button id="edit-post" class="btn">Edit post</button></a>
 	</div>
 </article>
 {{#if loggedIn}}

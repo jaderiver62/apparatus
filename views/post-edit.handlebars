@@ -1,26 +1,22 @@
 <article>
-  <a href="/dashboard"> &larr; Back to dashboard</a>
-  <h2>
-    Edit Post
-  </h2>
-  <form class="edit-post-form">
-      <input name="post-title" type="text" value="{{post.title}}" />
-	   <textarea name="post-content" type="text" value="{{post.content}}"></textarea>
-    </div>
-    <div>
-       by you on {{date_format post.created_at}}
-      |
-      <a href="/post/{{post.id}}">{{post.comments.length}} {{word_format "comment" post.comments.length}}</a>
-    </div>
-    <button type="submit">Save post</button>
-    <button type="button" class="delete-post-btn">Delete post</button>
-  </form>
+	<h2 class="post-header">
+		<i class="fas fa-edit"></i>&emsp;Post Editor
+	</h2>
+	<form class="edit-post-form">
+		<label for="post-title">Edit Title</label>
+		<input name="post-title" type="text" value="{{post.title}}" />
+		<label for="post-content">Edit Post Content</label>
+		<textarea name="post-content" type="text"> {{post.content}}</textarea>
+		<div>
+			<h4>
+				<a href="/post/{{post.id}}">{{post.comments.length}} {{word_format "comment" post.comments.length}}</a>
+			</h4>
+		</div>
+		<button class="btn" type="submit">Save post</button>
+		<button type="button" class="btn delete-post-btn">Delete post</button>
+	</form>
 </article>
-
-{{>add-comment}}
-
 {{>comment-content}}
-
-<script src="/javascript/edit-post.js"></script>
+{{>add-comment}}
+<script src="/javascript/post-edit.js"></script>
 <script src="/javascript/delete-post.js"></script>
-<script src="/javascript/comment.js"></script>

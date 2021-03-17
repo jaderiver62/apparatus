@@ -187,6 +187,7 @@ h4 {
 }
 
 .post-dash,
+.edit,
 .edit-post {
     font-size: 1.7rem;
     padding: 40px;
@@ -201,6 +202,19 @@ h4 {
     margin: 40px;
 }
 
-.home-post-title {
+.home-post-title,
+.edit-post-form {
     font-size: 2rem;
+}
+
+.view-post-title {
+    font-size: 2.6rem;
+}
+
+.post-content {
+    font-size: 1.4rem;
+}
+
+.edit-post-form {
+    padding: 40px;
 }
