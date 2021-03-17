@@ -22,11 +22,27 @@ This is a Tech Blog App that allows users to signup for login credentials, read,
 ![Project Image](./public/images/apparatus_screenshot_3.png)
 ![Project Image](./public/images/apparatus_screenshot_5.png)
 
-
-
-
 ---------------------------------------
 
+## Installation
+
+To use this application MySQL and Node.js must be installed first.
+
+Clone the repo, and in the command line run 
+
+>
+> $ npm install
+> 
+Next use dotenv to secure your credentials by making a .env file in the root of your directory.  Use the following template (Where the '*{your-database-name}/{your-user}/{your-password}*' is located use your own personal value!  This is only the template!)
+
+> DB_NAME="{your-database-name}_db"
+> DB_NAMEDB_USER="{your-user}"{your-}
+> DB_PW="{your-password}"
+
+
+Finally, run npm start in the command line to generate the apparatus server!
+
+---------------------------------------
 ## Testing
 
 Provided within this repository are several tests (_tests_) in Jest for the helpers, to use them simply run npm install in the folder, then npm test.
