@@ -6,7 +6,7 @@
 
 ## Description
 
-This is a Tech Blog App that allows users to signup for login credentials, read, write, edit and delete blog posts in a forum
+This is a CMS-style tech blog application that allows users to signup for login credentials, read, write, edit and delete blog posts on a site.
 
 ---------------------------------------
 
@@ -51,6 +51,21 @@ Finally, run npm start in the command line to generate the apparatus server!
 ## Testing
 
 Provided within this repository are several tests (_tests_) in Jest for the helpers, to use them simply run npm install in the folder, then npm test.
+
+The repo code also contains seed data for testing purposes.  To use the seeds, log into the MySQL cli:
+
+> mysql> source db/schema.sql;
+>
+> mysql> quit
+>
+
+Then in the command line, run:
+
+>
+> $ npm run seeds
+>
+
+This will load the appartatus_db database with dummy users, comments and posts so you can view and test the functionality.
 
 ---------------------------------------
 
