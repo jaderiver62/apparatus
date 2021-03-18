@@ -36,7 +36,11 @@ Clone the repo, and in the command line run
 >
 > $ npm install
 > 
-Next use dotenv to secure your credentials by making a .env file in the root of your directory.  Use the following template (Where the '*{your-database-name}/{your-user}/{your-password}*' is located use your own personal value!  This is only the template!)
+Next use the dotenv package to secure your credentials - make a .env file in the root of your directory.  
+
+Enter your database name (example: apparatus_db), your MySQL password and user.
+
+To do this you can refer to the following template (Where the '*{your-database-name}/{your-user}/{your-password}*' is located  - you do need to enter your own personal values.)
 
 > DB_NAME="{your-database-name}_db"
 >
@@ -45,7 +49,7 @@ Next use dotenv to secure your credentials by making a .env file in the root of 
 > DB_PW="{your-password}"
 
 
-Finally, run npm start in the command line to generate the apparatus server!
+Finally, run npm start in the command line to generate the apparatus server.
 
 ---------------------------------------
 ## Testing
