@@ -14,8 +14,8 @@ const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const sess = {
-    secret: 'nuggleberry can haz cheezeburgers',
-    cookie: {},
+    secret: 'use dotenv to protect your secret',
+    cookie: { maxAge: 15 * 60 * 1000 }, // maxAge = 15 minutes
     resave: false,
     saveUninitialized: true,
     store: new SequelizeStore({
