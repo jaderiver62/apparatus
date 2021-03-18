@@ -7,8 +7,11 @@
 	<ol>
 		{{#each posts as |post|}}
 		<li>
-			{{> post-content post}}
-
+			<div class ="post">
+				{{> post-content post}}
+				<a href="/dashboard/edit/{{post.id}}" class="edit-post"><button id="edit-post" class="btn">Edit
+						post</button></a>
+			</div>
 		</li>
 		{{/each}}
 	</ol>
