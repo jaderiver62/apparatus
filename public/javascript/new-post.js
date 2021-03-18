@@ -1,3 +1,4 @@
+// new post script - add a user's post - listens for 'new-post-form'
 async function newFormHandler(event) {
     event.preventDefault();
 

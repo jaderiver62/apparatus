@@ -1,3 +1,5 @@
+// comment post script, listens for 'comment-form'
+
 async function commentFormHandler(event) {
     event.preventDefault();
 

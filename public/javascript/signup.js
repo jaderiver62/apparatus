@@ -1,3 +1,4 @@
+// new user sign up script  - listens for 'signup-form'
 async function signupFormHandler(event) {
     event.preventDefault();
 

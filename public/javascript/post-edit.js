@@ -1,3 +1,5 @@
+// edit a user's post script  - listens for 'edit-post-form'
+
 async function editFormHandler(event) {
     event.preventDefault();
 

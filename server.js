@@ -1,8 +1,11 @@
 const path = require('path');
+require('dotenv').config();
+
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
-require('dotenv').config();
+
+
 const helpers = require('./utils/helpers');
 const app = express();
 const PORT = process.env.PORT || 3001;

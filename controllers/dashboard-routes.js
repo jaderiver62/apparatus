@@ -4,6 +4,7 @@ const withAuth = require('../utils/auth');
 
 // handles requests to the dahsboard routes using withAuth
 
+// get all of a specific user's posts for the dashboard
 router.get('/', withAuth, (req, res) => {
     Post.findAll({
             where: {
@@ -39,6 +40,7 @@ router.get('/', withAuth, (req, res) => {
         });
 });
 
+// edit the user's specific post
 router.get('/edit/:id', withAuth, (req, res) => {
     Post.findByPk(req.params.id, {
             attributes: [

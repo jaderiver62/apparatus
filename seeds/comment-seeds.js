@@ -1,5 +1,9 @@
 const { Comment } = require('../models');
 
+
+// I created unique dummy information to seed the site so people can do a demo and test the functionality
+
+
 const commentdata = [{
         comment_text: 'Viverra aliquet eget sit amet tellus cras adipiscing enim. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.',
         user_id: 6,

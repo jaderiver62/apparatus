@@ -1,3 +1,5 @@
+// delete post script - listens for 'delete-post-btn'
+
 async function deleteFormHandler(event) {
     event.preventDefault();
 

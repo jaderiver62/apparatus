@@ -4,6 +4,7 @@ const router = require('express').Router();
 
 const { Post, User, Comment } = require('../models');
 
+// get all posts to render in homepage
 router.get('/', (req, res) => {
     console.log(req.session);
     Post.findAll({
@@ -40,6 +41,7 @@ router.get('/', (req, res) => {
         });
 });
 
+// view a specific post
 router.get('/post/:id', (req, res) => {
     Post.findOne({
             where: {
@@ -84,6 +86,7 @@ router.get('/post/:id', (req, res) => {
         });
 });
 
+// route for a new user to sign up
 router.get('/signup', (req, res) => {
     if (req.session.loggedIn) {
         res.redirect('/');
@@ -93,6 +96,7 @@ router.get('/signup', (req, res) => {
     res.render('sign-up');
 });
 
+// route for a user to log in
 router.get('/login', (req, res) => {
     if (req.session.loggedIn) {
         res.redirect('/');
@@ -101,6 +105,8 @@ router.get('/login', (req, res) => {
 
     res.render('login');
 });
+
+// route for a user to make a new post if logged in
 router.get('/new-post', (req, res) => {
     if (!req.session.loggedIn) {
         res.redirect('/');
@@ -109,4 +115,5 @@ router.get('/new-post', (req, res) => {
 
     res.render('new-post');
 });
+
 module.exports = router;

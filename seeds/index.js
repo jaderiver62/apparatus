@@ -2,6 +2,7 @@ const seedUsers = require('./user-seeds');
 const seedPosts = require('./post-seeds');
 const seedComments = require('./comment-seeds');
 
+// seed code for practicing loading the database with information and test functionality
 
 const sequelize = require('../config/connection');
 

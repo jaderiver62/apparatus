@@ -1,5 +1,6 @@
 const { date_format, word_format } = require('../utils/helpers');
 
+// tests for the date and word pluralization formatter
 
 test('date_format() returns a date string', () => {
     const date = new Date('2020-03-20 16:12:03');

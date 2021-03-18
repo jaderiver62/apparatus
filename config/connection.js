@@ -2,7 +2,7 @@ const Sequelize = require('sequelize');
 
 require('dotenv').config();
 
-// usig dotenv to secure our credentials
+// usig dotenv to secure credentials
 
 const sequelize = process.env.JAWSDB_URL ?
     new Sequelize(process.env.JAWSDB_URL) :

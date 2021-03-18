@@ -1,3 +1,5 @@
+// login script starts a user's session, listens for 'login-form'
+
 async function loginFormHandler(event) {
     event.preventDefault();
 

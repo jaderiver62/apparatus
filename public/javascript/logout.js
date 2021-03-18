@@ -1,3 +1,5 @@
+// log out script - ends a user's session - listens for 'logout'
+
 async function logout() {
     const response = await fetch('/api/users/logout', {
         method: 'post',

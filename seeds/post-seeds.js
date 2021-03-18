@@ -1,5 +1,8 @@
 const { Post } = require('../models');
 
+// I created unique dummy information to seed the site so people can do a demo and test the functionality
+
+
 const postdata = [{
         title: 'Tellus cras adipiscing enim eu turpis egestas pretium aenean',
         content: 'Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus pretium quam vulputate dignissim suspendisse in est. Accumsan in nisl nisi scelerisque eu ultrices vitae. Ut placerat orci nulla pellentesque dignissim enim sit amet. Tincidunt dui ut ornare lectus sit amet est.',

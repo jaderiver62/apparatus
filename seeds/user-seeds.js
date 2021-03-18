@@ -1,5 +1,7 @@
-const sequelize = require('../config/connection');
 const { User, Post } = require('../models');
+
+// I created unique dummy information to seed the site so people can do a demo and test the functionality
+
 
 const userdata = [{
         username: 'ninajoy',
